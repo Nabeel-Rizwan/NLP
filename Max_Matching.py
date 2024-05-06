@@ -1,6 +1,8 @@
 import nltk
 from nltk.corpus import words
 
+nltk.download('words')
+
 string = input("Enter the statement: ")
 
 lowercase = [x.lower() for x in words.words()]
