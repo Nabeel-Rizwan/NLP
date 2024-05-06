@@ -11,10 +11,6 @@ probabilities = bigram.value_counts(normalize=True)  ### getting probability of 
 letters = pd.Series(data.split()).unique()  ### getting each chord 
 prob = bigram.value_counts(normalize=True)
 
-mat = (
-    pd.Series(
-        prob, index=[prob.index.str[0], prob.index.str[1]])
-    .unstack(fill_value=0).round(3)
-)
+print(probabilities)
 
-print(mat)
+print("Vocabulary: ", letters)
