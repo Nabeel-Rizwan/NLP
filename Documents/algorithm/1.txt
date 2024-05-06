@@ -1,0 +1,99 @@
+In mathematics and computer science, an algorithm (/ˈælɡərɪðəm/ ⓘ) is a finite sequence of mathematically rigorous instructions, typically used to solve a class of specific problems or to perform a computation.[1] Algorithms are used as specifications for performing calculations and data processing. More advanced algorithms can use conditionals to divert the code execution through various routes (referred to as automated decision-making) and deduce valid inferences (referred to as automated reasoning), achieving automation eventually. Using human characteristics as descriptors of machines in metaphorical ways was already practiced by Alan Turing with terms such as "memory", "search" and "stimulus".[2]
+In contrast, a heuristic is an approach to problem solving that may not be fully specified or may not guarantee correct or optimal results, especially in problem domains where there is no well-defined correct or optimal result.[3]  For example, social media recommender systems rely on heuristics in such a way that, although widely characterized as "algorithms" in 21st century popular media, cannot deliver correct results due to the nature of the problem.
+As an effective method, an algorithm can be expressed within a finite amount of space and time[4] and in a well-defined formal language[5] for calculating a function.[6] Starting from an initial state and initial input (perhaps empty),[7] the instructions describe a computation that, when executed, proceeds through a finite[8] number of well-defined successive states, eventually producing "output"[9] and terminating at a final ending state. The transition from one state to the next is not necessarily deterministic; some algorithms, known as randomized algorithms, incorporate random input.[10]
+Around 825 AD, Persian scientist and polymath Muḥammad ibn Mūsā al-Khwārizmī wrote kitāb al-ḥisāb al-hindī ("Book of Indian computation") and kitab al-jam' wa'l-tafriq al-ḥisāb al-hindī ("Addition and subtraction in Indian arithmetic"). Both of these texts are lost in the original Arabic at this time. However, his other book on algebra remains.[1]
+In the early 12th century, Latin translations of said al-Khwarizmi texts involving the Hindu–Arabic numeral system and arithmetic appeared: Liber Alghoarismi de practica arismetrice (attributed to John of Seville) and Liber Algorismi de numero Indorum (attributed to Adelard of Bath).[2] Hereby, alghoarismi or algorismi is the Latinization of Al-Khwarizmi's name; the text starts with the phrase Dixit Algorismi ("Thus spoke Al-Khwarizmi").[3]
+Around 1230, the English word algorism is attested and then by Chaucer in 1391, English adopted the French term.[4][5][clarification needed] In the 15th century, under the influence of the Greek word ἀριθμός (arithmos, "number"; cf. "arithmetic"), the Latin word was altered to algorithmus.[citation needed]
+One informal definition is "a set of rules that precisely defines a sequence of operations",[11][need quotation to verify] which would include all computer programs (including programs that do not perform numeric calculations), and (for example) any prescribed bureaucratic procedure[12]
+or cook-book recipe.[13] In general, a program is an algorithm only if it stops eventually[14]—even though infinite loops may sometimes prove desirable. Boolos, Jeffrey & 1974, 1999 define an algorithm to be a set of instructions for determining an output, given explicitly, in a form that can be followed by either a computing machine, or a human who could only carry out specific elementary operations on symbols.[15]
+The concept of algorithm is also used to define the notion of decidability—a notion that is central for explaining how formal systems come into being starting from a small set of axioms and rules. In logic, the time that an algorithm requires to complete cannot be measured, as it is not apparently related to the customary physical dimension. From such uncertainties, that characterize ongoing work, stems the unavailability of a definition of algorithm that suits both concrete (in some sense) and abstract usage of the term.
+Most algorithms are intended to be implemented as computer programs. However, algorithms are also implemented by other means, such as in a biological neural network (for example, the human brain implementing arithmetic or an insect looking for food), in an electrical circuit, or in a mechanical device.
+Since antiquity, step-by-step procedures for solving mathematical problems have been attested. This includes Babylonian mathematics (around 2500 BC),[16] Egyptian mathematics (around 1550 BC),[16] Indian mathematics (around 800 BC and later; e.g. Shulba Sutras, Kerala School, and Brāhmasphuṭasiddhānta),[17][18] The Ifa Oracle (around 500 BC), Greek mathematics (around 240 BC, e.g. sieve of Eratosthenes and Euclidean algorithm),[19] and Arabic mathematics (9th century, e.g. cryptographic algorithms for code-breaking based on frequency analysis).[20] The first cryptographic algorithm for deciphering encrypted code was developed by Al-Kindi, a 9th-century Arab mathematician, in A Manuscript On Deciphering Cryptographic Messages. He gave the first description of cryptanalysis by frequency analysis, the earliest codebreaking algorithm.[20]
+The earliest evidence of algorithms is found in the Babylonian mathematics of ancient Mesopotamia (modern Iraq). A Sumerian clay tablet found in Shuruppak near Baghdad and dated to c. 2500 BC described the earliest division algorithm.[16] During the Hammurabi dynasty c. 1800 – c. 1600 BC, Babylonian clay tablets described algorithms for computing formulas.[21] Algorithms were also used in Babylonian astronomy. Babylonian clay tablets describe and employ algorithmic procedures to compute the time and place of significant astronomical events.[22]
+Algorithms for arithmetic are also found in ancient Egyptian mathematics, dating back to the Rhind Mathematical Papyrus c. 1550 BC.[16] Algorithms were later used in ancient Hellenistic mathematics. Two examples are the Sieve of Eratosthenes, which was described in the Introduction to Arithmetic by Nicomachus,[23][19]: Ch 9.2  and the Euclidean algorithm, which was first described in Euclid's Elements (c. 300 BC).[19]: Ch 9.1
+Bolter credits the invention of the weight-driven clock as "The key invention [of Europe in the Middle Ages]", in particular, the verge escapement[24] that provides us with the tick and tock of a mechanical clock. "The accurate automatic machine"[25] led immediately to "mechanical automata" beginning in the 13th century and finally to "computational machines"—the difference engine and analytical engines of Charles Babbage and Countess Ada Lovelace, mid-19th century.[26] Lovelace is credited with the first creation of an algorithm intended for processing on a computer—Babbage's analytical engine, the first device considered a real Turing-complete computer instead of just a calculator—and is sometimes called "history's first programmer" as a result, though a full implementation of Babbage's second device would not be realized until decades after her lifetime.
+Bell and Newell (1971) indicate that the Jacquard loom (1801), precursor to Hollerith cards (punch cards, 1887), and "telephone switching technologies" were the roots of a tree leading to the development of the first computers.[27] By the mid-19th century the telegraph, the precursor of the telephone, was in use throughout the world, its discrete and distinguishable encoding of letters as "dots and dashes" a common sound. By the late 19th century, the ticker tape (c. 1870s) was in use, as was the use of Hollerith cards in the 1890 U.S. census. Then came the teleprinter (c. 1910) with its punched-paper use of Baudot code on tape.
+Telephone-switching networks of electromechanical relays (invented 1835) was behind the work of George Stibitz (1937), the inventor of the digital adding device. As he worked in Bell Laboratories, he observed the "burdensome' use of mechanical calculators with gears. "He went home one evening in 1937 intending to test his idea... When the tinkering was over, Stibitz had constructed a binary adding device".[28] The mathematician Martin Davis supported the particular importance of the electromechanical relay.[29]
+In 1928, a partial formalization of the modern concept of algorithms began with attempts to solve the Entscheidungsproblem (decision problem) posed by David Hilbert. Later formalizations were framed as attempts to define "effective calculability"[30] or "effective method".[31] Those formalizations included the Gödel–Herbrand–Kleene recursive functions of 1930, 1934 and 1935, Alonzo Church's lambda calculus of 1936, Emil Post's Formulation 1 of 1936, and Alan Turing's Turing machines of 1936–37 and 1939.
+Algorithms can be expressed in many kinds of notation, including natural languages, pseudocode, flowcharts, drakon-charts, programming languages or control tables (processed by interpreters). Natural language expressions of algorithms tend to be verbose and ambiguous and are rarely used for complex or technical algorithms. Pseudocode, flowcharts, drakon-charts and control tables are structured ways to express algorithms that avoid many of the ambiguities common in statements based on natural language. Programming languages are primarily intended for expressing algorithms in a form that can be executed by a computer, but they are also often used as a way to define or document algorithms.
+There is a wide variety of representations possible and one can express a given Turing machine program as a sequence of machine tables (see finite-state machine, state-transition table and control table for more), as flowcharts and drakon-charts (see state diagram for more), or as a form of rudimentary machine code or assembly code called "sets of quadruples" (see Turing machine for more). Representations of algorithms can also be classified into three accepted levels of Turing machine description: high level description, implementation description, and formal description.[32] A high level description describes qualities of the algorithm itself, ignoring how it is implemented on the Turing machine.[32] An implementation description describes the general manner in which the machine moves its head and stores data in order to carry out the algorithm, but doesn't give exact states.[32] In the most detail, a formal description gives the exact state table and list of transitions of the Turing machine.[32]
+The graphical aid called a flowchart offers a way to describe and document an algorithm (and a computer program corresponding to it). Like the program flow of a Minsky machine, a flowchart always starts at the top of a page and proceeds down. Its primary symbols are only four: the directed arrow showing program flow, the rectangle (SEQUENCE, GOTO), the diamond (IF-THEN-ELSE), and the dot (OR-tie). The Böhm–Jacopini canonical structures are made of these primitive shapes. Sub-structures can "nest" in rectangles, but only if a single exit occurs from the superstructure. The symbols and their use to build the canonical structures are shown in the diagram.[33]
+It is frequently important to know how much of a particular resource (such as time or storage) is theoretically required for a given algorithm. Methods have been developed for the analysis of algorithms to obtain such quantitative answers (estimates); for example, an algorithm which adds up the elements of a list of n numbers would have a time requirement of 
+
+
+
+O
+(
+n
+)
+
+
+{\displaystyle O(n)}
+
+, using big O notation. At all times the algorithm only needs to remember two values: the sum of all the elements so far, and its current position in the input list. Therefore, it is said to have a space requirement of 
+
+
+
+O
+(
+1
+)
+
+
+{\displaystyle O(1)}
+
+, if the space required to store the input numbers is not counted, or 
+
+
+
+O
+(
+n
+)
+
+
+{\displaystyle O(n)}
+
+ if it is counted.
+Different algorithms may complete the same task with a different set of instructions in less or more time, space, or 'effort' than others. For example, a binary search algorithm (with cost 
+
+
+
+O
+(
+log
+⁡
+n
+)
+
+
+{\displaystyle O(\log n)}
+
+) outperforms a sequential search (cost 
+
+
+
+O
+(
+n
+)
+
+
+{\displaystyle O(n)}
+
+ ) when used for table lookups on sorted lists or arrays.
+The analysis, and study of algorithms is a discipline of computer science, and is often practiced abstractly without the use of a specific programming language or implementation. In this sense, algorithm analysis resembles other mathematical disciplines in that it focuses on the underlying properties of the algorithm and not on the specifics of any particular implementation. Usually, pseudocode is used for analysis as it is the simplest and most general representation. However, ultimately, most algorithms are usually implemented on particular hardware/software platforms and their algorithmic efficiency is eventually put to the test using real code. For the solution of a "one off" problem, the efficiency of a particular algorithm may not have significant consequences (unless n is extremely large) but for algorithms designed for fast interactive, commercial or long life scientific usage it may be critical. Scaling from small n to large n frequently exposes inefficient algorithms that are otherwise benign.
+Empirical testing is useful because it may uncover unexpected interactions that affect performance. Benchmarks may be used to compare before/after potential improvements to an algorithm after program optimization.
+Empirical tests cannot replace formal analysis, though, and are not trivial to perform in a fair manner.[34]
+To illustrate the potential improvements possible even in well-established algorithms, a recent significant innovation, relating to FFT algorithms (used heavily in the field of image processing), can decrease processing time up to 1,000 times for applications like medical imaging.[35] In general, speed improvements depend on special properties of the problem, which are very common in practical applications.[36] Speedups of this magnitude enable computing devices that make extensive use of image processing (like digital cameras and medical equipment) to consume less power.
+Algorithm design refers to a method or a mathematical process for problem-solving and engineering algorithms. The design of algorithms is part of many solution theories, such as divide-and-conquer or dynamic programming within operation research. Techniques for designing and implementing algorithm designs are also called algorithm design patterns,[37] with examples including the template method pattern and the decorator pattern. One of the most important aspects of algorithm design is resource (run-time, memory usage) efficiency; the big O notation is used to describe e.g., an algorithm's run-time growth as the size of its input increases.[citation needed]
+Per the Church–Turing thesis, any algorithm can be computed by a model known to be Turing complete. In fact, it has been demonstrated that Turing completeness requires only four instruction types—conditional GOTO, unconditional GOTO, assignment, HALT. However, Kemeny and Kurtz observe that, while "undisciplined" use of unconditional GOTOs and conditional IF-THEN GOTOs can result in "spaghetti code", a programmer can write structured programs using only these instructions; on the other hand "it is also possible, and not too hard, to write badly structured programs in a structured language".[38] Tausworthe augments the three Böhm-Jacopini canonical structures:[39] SEQUENCE, IF-THEN-ELSE, and WHILE-DO, with two more: DO-WHILE and CASE.[40] An additional benefit of a structured program is that it lends itself to proofs of correctness using mathematical induction.[41]
+There are various ways to classify algorithms, each with its own merits.
+One way to classify algorithms is by implementation means.
+Another way of classifying algorithms is by their design methodology or paradigm. There is a certain number of paradigms, each different from the other. Furthermore, each of these categories includes many different types of algorithms. Some common paradigms are:
+For optimization problems there is a more specific classification of algorithms; an algorithm for such problems may fall into one or more of the general categories described above as well as into one of the following:
+Algorithms, by themselves, are not usually patentable. In the United States, a claim consisting solely of simple manipulations of abstract concepts, numbers, or signals does not constitute "processes" (USPTO 2006), so algorithms are not patentable (as in Gottschalk v. Benson). However practical applications of algorithms are sometimes patentable. For example, in Diamond v. Diehr, the application of a simple feedback algorithm to aid in the curing of synthetic rubber was deemed patentable. The patenting of software is controversial,[45] and there are criticized patents involving algorithms, especially data compression algorithms, such as Unisys's LZW patent. Additionally, some cryptographic algorithms have export restrictions (see export of cryptography).
+One of the simplest algorithms is to find the largest number in a list of numbers of random order. Finding the solution requires looking at every number in the list. From this follows a simple algorithm, which can be stated in a high-level description in English prose, as:
+High-level description:
+(Quasi-)formal description:
+Written in prose but much closer to the high-level language of a computer program, the following is the more formal coding of the algorithm in pseudocode or pidgin code:
