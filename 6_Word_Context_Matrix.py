@@ -1,33 +1,30 @@
-from nltk.tokenize import word_tokenize
 import numpy as np
-import pandas as pd
+from gensim.models import Word2Vec
+import nltk
 
-corpus=['I love AI','I love deep learning','I enjoy learning']
+# Load and preprocess the corpus
 
-def build_co_occurrence_matrix(corpus,window_size):
-    #build unique words
-    unique_words=set()
-    for text in corpus:
-        for word in word_tokenize(text):
-            unique_words.add(word)
-    word_search_dict={word:np.zeros(shape=(len(unique_words))) for word in unique_words}
-    word_list=list(word_search_dict.keys())
-    for text in corpus:
-        text_list=word_tokenize(text)
-        for idx,word in enumerate(text_list):
-            #pick word in the size range
-            i=max(0,idx-window_size)
-            j=min(len(text_list)-1,idx+window_size)
-            search=[text_list[idx_] for idx_ in range(i,j+1)]
-            search.remove(word)
-            for neighbor in search:
-                # get neighbor idx in word_search_dict
-                nei_idx=word_list.index(neighbor)
-                word_search_dict[word][nei_idx]+=1
-    return word_search_dict
+corpus_text = "i i i hello world"
 
-coo_dict=build_co_occurrence_matrix(corpus,window_size=1)
-print(coo_dict)
-print("\n")
-table=pd.DataFrame(coo_dict,index=coo_dict.keys()).astype('int')
-print(table)
+# Tokenize the corpus
+corpus_sentences = nltk.sent_tokenize(corpus_text)
+corpus_words = [nltk.word_tokenize(sentence.lower()) for sentence in corpus_sentences]
+
+# Train a word2vec model with the specified window size
+model = Word2Vec(corpus_words, min_count=1, window=2)
+
+# Get vocabulary size
+vocab_size = len(model.wv)
+
+# Initialize co-occurrence matrix
+cooccurrence_matrix = np.zeros((vocab_size, vocab_size))
+
+# Iterate through each word pair in the corpus
+for context in corpus_words:
+    for i, target_word in enumerate(context):
+        target_index = model.wv.key_to_index[target_word]
+        for j, context_word in enumerate(context):
+            context_index = model.wv.key_to_index[context_word]
+            cooccurrence_matrix[target_index][context_index] += 1
+
+print(cooccurrence_matrix)

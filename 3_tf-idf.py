@@ -14,4 +14,5 @@ tfidf_matrix = vectorizer.fit_transform([text])
 tfidf_array = tfidf_matrix.toarray()
 
 # Print the TF-IDF matrix
+print(tfidf_matrix)
 print(tfidf_array)

@@ -1,16 +1,28 @@
 import pandas as pd
 from nltk.util import ngrams
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
 
-data="hello today world how are you doing doing today"
+data = "hello today world how are you doing doing today"
 
-bigram = pd.Series(ngrams(data.split(),2)) ### creating the bigrams of ordered pairs like:
+# Create bigrams
+bigram_series = pd.Series(ngrams(data.split(), 2))
+print(bigram_series)
+# Convert bigrams to strings
+prob=bigram_series.value_counts(normalize=True)
+print(prob)
 
-print(bigram)
+bigram_strings = bigram_series.apply(lambda x: ' '.join(x))
 
-probabilities = bigram.value_counts(normalize=True)  ### getting probability of each ordered pair
-letters = pd.Series(data.split()).unique()  ### getting each chord 
-prob = bigram.value_counts(normalize=True)
+# Initialize CountVectorizer to convert bigrams to vectors
+vectorizer = CountVectorizer()
 
-print(probabilities)
+# Fit and transform bigrams to vector representation
+bigram_vectors = vectorizer.fit_transform(bigram_strings)
 
-print("Vocabulary: ", letters)
+# Calculate cosine similarity between each pair of bigram vectors
+cosine_similarities = cosine_similarity(bigram_vectors, bigram_vectors)
+
+# Print cosine similarities matrix
+print("Cosine Similarities Matrix:")
+print(cosine_similarities)
