@@ -5,9 +5,7 @@ data="hello today world how are you doing doing today"
 
 bigram = pd.Series(ngrams(data.split(),2)) ### creating the bigrams of ordered pairs like:
 
-### 0      (F, Em7) 
-### 1     (Em7, A7) 
-### 2      (A7, Dm)
+print(bigram)
 
 probabilities = bigram.value_counts(normalize=True)  ### getting probability of each ordered pair
 letters = pd.Series(data.split()).unique()  ### getting each chord 
